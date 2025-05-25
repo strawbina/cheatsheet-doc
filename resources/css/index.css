@@ -1,0 +1,152 @@
+@font-face{
+    font-family:'Geist-Mono';
+    src:
+    url('resources/fonts/GeistMono-Black.ttf') format('ttf'),
+    url('resources/fonts/GeistMono-Bold.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-ExtraBold.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-ExtraLight.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-Light.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-Medium.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-Regular.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-SemiBold.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-Thin.ttf')format('ttf'),
+    url('resources/fonts/GeistMono-VariableFont_wght.ttf')format('ttf');
+}
+
+.header-container {
+    min-width: 800px;
+}
+
+html {
+    background-color: #f5f9ff;
+
+}
+
+.header-container {
+    padding: 0 0;
+
+}
+body {
+    font-family: 'Geist-Mono', monospace;
+    margin: 100px 100px;
+
+}
+
+
+h1 {
+    font-weight: 550;
+    text-align: center;
+    min-width: 200px;
+    margin: 1.5rem 0;
+
+}
+
+h2 {
+    font-weight: 590;
+    text-align: center;
+    display: block;
+    min-width: 200px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-right: 190px;
+}
+
+h3 {
+    font-weight: 590;
+    text-align: left;
+    display: inline;
+    min-width: 200%;
+    padding: 40px 0;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    margin: 1.5rem 0;
+    width: 80%;
+    min-width: 50px;
+}
+
+th{
+    text-align: center;
+}
+
+#resources {
+    line-height: 2;
+    text-align: left;
+    margin-right: 150px;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0;
+}
+
+mark {
+    background-color: #FFEA00;
+}
+
+th {
+    background-color: #c2d4f0;
+}
+
+.row-even {
+    background-color: #e4ebf7;
+}
+
+.navigation {
+    width: 250px;
+    margin-right: 50px;
+    margin-top: 187px;
+    position: sticky;
+    top: 0;
+
+}
+
+.navigation a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    right: 200px;
+    text-align: left;
+
+
+}
+
+.navigation li {
+    margin-right: 1em;
+
+}
+
+.navigation a:hover {
+    background-color: #e4ebf7;
+    font-weight: 600;
+}
+
+.navigation a.active {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+
+
+
+
