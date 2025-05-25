@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Cheat Sheet</title>
+        <link rel="stylesheet" href="./resources/css/index.css">
+    </head>
+    <body>
+        <header>
+            <div class ="header-container">
+                <img src="resources/images/arrows.svg" alt="arrows">
+            </div>
+                <h1 id="title">HTML & CSS Cheat Sheet</h1>
+        </header>
+        <div class="container">
+            <nav class="navigation">
+                <a href="#basics">Basics</a>
+                <a href="#id-classes">ID & Classes</a>
+                <a href="#typography">Typography</a>
+                <a href="#table">Table</a>
+                <a href="#list">List</a>
+                <a href="#images">Image</a>
+                <a href="#links">Links</a>
+                <a href="#resources">Resources</a>
+            </nav>
+        <main>
+            <h2>Basics</h2>
+                <section id="basics">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <mark>&lt;!DOCTYPE html&gt;</mark></td>
+                            <td>Defines the document type and version of HTML</td>
+                        </tr>
+                        <tr class="row-even">
+                            <td><mark>&lt;html&gt;</mark></td>
+                            <td>Defines the root of an HTML document</td>
+                        </tr>
+                        <tr>
+                            <td><mark>&lt;head&gt;</mark></td>
+                            <td>Contains meta-information about the document</td>
+                        </tr>
+                        <tr class="row-even">
+                            <td><mark>&lt;title</mark></td>
+                            <td>Defines the title of document, shown in browser's tab,
+                                add into <mark>&lt;head&gt;</mark></td>
+                        </tr>
+                        <tr>
+                            <td><mark>&lt;link rel="stylesheet" href="styles.css"&gt;</mark></td>
+                            <td>Links CSS stylesheet to HTML doc inside <mark>&lt;head&gt;</mark></td>
+                        </tr>
+                        <tr class="row-even">
+                            <td><mark>&lt;div&gt;</mark></td>
+                            <td>Defines a division or section in HTML,
+                                which can be styled with CSS</td>
+                        </tr>
+                        <tr>
+                            <td><mark>&lt;span&gt;</mark></td>
+                            <td>An inline container used to mark of a part of text with CSS</td>
+                        </tr>
+                        <tr class="row-even">
+                            <td><mark>&lt;br&gt;</mark></td>
+                            <td>Inserts a single line break</td>
+                        </tr>
+                        <tr>
+                            <td><mark>&lt;hr&gt;</mark></td>
+                            <td>Creates a thematic break in the content (horizontal line)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                    <h3>CSS Attributes</h3>
+
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Attributes</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>background-color</mark></td>
+                                <td>Sets the background color of an element</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>color</mark></td>
+                                <td>Sets the foreground color of an element</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="id-classes">
+                    <h2>IDs & Classes</h2>
+                    <h3>HTML Tags</h3>
+                    <table class ="center">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;id=""&gt;</mark></td>
+                                <td>Specifies a unique ID for an HTML element, can
+                                    only be used for one element within the page</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;class=""&gt;</mark></td>
+                                <td>Points to a class name in HTML, can be used for multiple elements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>CSS Attributes</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>#</mark></td>
+                                <td>#id in CSS, can only be used for one element within the page</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>.</mark></td>
+                                <td>.class points to a class name. Can be used for multiple elements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="typography">
+                    <h2>Typography</h2>
+                    <h3>HTML Tags</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;h1&gt; to &lt;h6&gt;</mark></td>
+                                <td>Defines HTML headings, from largest &lt;h1 to smallest &lt;h6&gt </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>CSS Attributes</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>font-family</mark></td>
+                                <td>Defines font-family, separate with commas for backup fonts</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>font-weight</mark></td>
+                                <td>Defines the font weight. Can be set with normal, bold, lighter, bolder</td>
+                            </tr>
+                            <tr>
+                                <td><mark>font-style</mark></td>
+                                <td>Sets a font with normal, italic, oblique</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>text-transform</mark></td>
+                                <td>Specifies how to capitalize an element's text: capitalize, uppercase, lowercase, none</td>
+                            </tr>
+                            <tr>
+                                <td><mark>text-align</mark></td>
+                                <td>Sets horizontal alignment of inline-level content inside a block element: center, start, end, justify</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="table">
+                    <h2>Tables</h2>
+                    <h3>HTML Tags</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;table&gt;</mark></td>
+                                <td>The wrapper element for all HTML tables</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;thead</mark></td>
+                                <td>The set of rows defining the column headers in a table</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;tr&gt;</mark></td>
+                                <td>The table row container</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;th&gt;</mark></td>
+                                <td>Defines a header cell in a table</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;tbody&gt;</mark></td>
+                                <td>The set of rows containing actual table data</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;td&gt;</mark></td>
+                                <td>Defines a standard cell in a table</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;tfoot&gt;</mark></td>
+                                <td>The set of rows defining the footer in a table</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;colspan&gt;</mark></td>
+                                <td>Defines number of columns a td element should span</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;rowspan&gt;</mark></td>
+                                <td>Defines number of rows a td element should span</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>CSS Attributes</h3>
+                    <table class = "center">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>border</mark></td>
+                                <td>Defines the border of the table-including width, style, color</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>padding</mark></td>
+                                <td>Defines the space between the cell content & its border, apply to
+                                &lt;td&gt; and &lt;th&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><mark>border-spacing</mark></td>
+                                <td>Defines the space between cells in a table, use on &lt;table&gt; property</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </section>
+
+                <section id="list">
+                    <h2>Lists</h2>
+                    <table class="center">
+                        <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;ol&gt;</mark></td>
+                                <td>Defines an ordered list</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;ul&gt;</mark></td>
+                                <td>Defines an unordered list</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;li&gt;</mark></td>
+                                <td>Defines a list item</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;dl&gt;</mark></td>
+                                <td>Defines a description list</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;dt&gt;</mark></td>
+                                <td>Defines a description term</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>&lt;dd&gt;</mark></td>
+                                <td>Describes each description term</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="images">
+                    <h2>Images</h2>
+                    <h3>HTML Tags</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;img src="img.jpg" alt="description"&gt;</mark></td>
+                                <td>Defines an image</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>width</mark></td>
+                                <td>set width="#" inside img tag</td>
+                            </tr>
+                            <tr>
+                                <td><mark>height</mark></td>
+                                <td>set height="#" inside img tag</td>
+                            </tr>
+                            <tr class="row-even">
+                                <td><mark>title=""</mark></td>
+                                <td>Displays title when mouse hover image</td>
+                            </tr>
+                            <tr>
+                                <td><mark>&lt;figcaption&gt;</mark></td>
+                                <td>Provides caption for figure</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>CSS Attributes</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>background-image</mark></td>
+                                <td>Sets one or more background images on an element</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="links">
+                    <h2>Links</h2>
+                    <h3>HTML Tags</h3>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark>&lt;a&gt;</mark></td>
+                                <td>Anchor element to create hyperlink &lt;a href="https://google.com"&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <h2>Resources</h2>
+                <section id="resources">
+                    <dl>
+                        <dt><a href="https://www.w3schools.com/html/">W3 Schools</a></dt>
+                            <dd>Learn to code with the world's largest web developer site.</dd>
+                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a></dt>
+                            <dd>Comprehensive source for web development documentation, covering from HTML, CSS, JavaScript.</dd>
+                    </dl>
+                </section>
+        </main>
+        </div>
+        <footer>
+            <p>built by sabrina nguyen</p>
+        </footer>
+    </body>
+</html>
+
